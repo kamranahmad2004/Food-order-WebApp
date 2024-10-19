@@ -1,6 +1,6 @@
 # 🍔 Food Order Web App
 ## Overview
-This is a Food Order Web App built using React and Redux. The app allows users to browse food items, add them to the cart, and place an order. The project includes a local dummy backend that stores food item data and user information for demonstration purposes.
+This is a Food Order Web App built using React and Redux. The app allows users to browse food items, add them to the cart, remove from cart and place an order. The project includes a local dummy backend that stores food item data and user information for demonstration purposes.
 
 ## ✨ Features
 - 🛒 Browse a variety of food items
