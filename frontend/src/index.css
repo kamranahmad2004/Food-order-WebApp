@@ -269,10 +269,6 @@ h1 {
   #main-header{
     padding: 3rem 7% !important;
   }
-
-  .meal-item{
-    margin: 0 10px 0 0;
-  }
 }
 
 /* Custom scrollbar for WebKit browsers */
