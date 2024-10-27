@@ -40,6 +40,7 @@ const MealItem = (mealData) => {
           </div>
         </div>
       </article>
+      
     </li>
   );
 };

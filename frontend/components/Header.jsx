@@ -7,6 +7,7 @@ import SuccessModal from "./Modals/SuccessModal";
 import { useSelector } from "react-redux";
 import FormModal from "./Modals/FormModal.jsx";
 import CartModal from "./Modals/CartModal";
+import styles from './Header.module.css'
 
 const Header = () => {
   const cart = useSelector((state) => state.cart);
@@ -36,13 +37,13 @@ const Header = () => {
     <>
       <header id="main-header">
         <div id="title">
-          <img src={logo} alt="logo image" />
-          <h1>ReactMeal</h1>
+          <img className={styles.logo} src={logo} alt="logo image" />
+          <h1 className={styles.title}>ReactMeal</h1>
         </div>
         <nav>
           <Button onClick={openModal} textOnly>
-            Cart ({cart.mealsItems.length})
-          </Button>
+            <span className={styles.cartBtn}>Cart ({cart.mealsItems.length})</span>
+          </Button> 
         </nav>
       </header>
       <Dialog ref={modal}>

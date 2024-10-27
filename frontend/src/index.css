@@ -260,3 +260,69 @@ h1 {
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 375px) {
+  #meals{
+    margin: 0;
+  }
+
+  #main-header{
+    padding: 3rem 7% !important;
+  }
+
+  .meal-item{
+    margin: 0 18px 0 0;
+  }
+}
+
+/* Custom scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px;               /* Slightly narrower scrollbar for a sleek look */
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c;       /* Dark background to match the overall dark theme */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aeaeae;     /* Dark gray thumb to blend with the theme */
+  border-radius: 10px;        /* Rounded for smooth, modern look */
+  border: 2px solid #1c1c1c;  /* Matches track background to create space effect */
+}
+
+/* Optional: Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;     /* Lighter gray when hovered for a subtle interaction */
+}
+
+
+/* Responsive animation on toast enter */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .Toastify__toast-container {
+    width: 80%; 
+    top: 10px;
+    right: 10px;
+    left: auto; 
+    margin: 0;
+  }
+
+  .Toastify__toast {
+    font-size: 0.85rem; /* Smaller text for very small screens */
+    padding: 6px; /* Reduce padding */
+    border-radius: 10px; /* Extra rounded corners */
+    background-color: #000000;
+    color: white;
+  }
+}

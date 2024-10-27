@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import MealItem from "./MealItem";
 import { fetchData } from "../store/actionCreater";
 import useLoadingAndError from "../hooks/useLoadingAndError"; 
+import { PulseLoader } from 'react-spinners'; // Import PulseLoader from react-spinners
 
 const Meals = () => {
   const dispatch = useDispatch();
@@ -27,9 +28,13 @@ const Meals = () => {
     fetchMeals();
   }, [dispatch, startLoading, stopLoading, setErrorState]);
 
-  // Show loading message if loading state is true
+  // Show loading state with the PulseLoader when loading
   if (loading) {
-    return <p style={{ textAlign: "center" }}>Loading your meals...</p>;
+    return (
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+        <PulseLoader color="#FFC404" loading={loading} size={15} />
+      </div>
+    );
   }
 
   // Show error message if there's an error

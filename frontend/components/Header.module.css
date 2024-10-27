@@ -1,0 +1,31 @@
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .title{
+        font-size: 23px !important;
+    }
+
+    .cartBtn{
+        font-size: 18px !important;
+    }
+
+    .logo{
+        width: 3rem !important;
+        height: 3rem !important;
+        object-fit: contain !important;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .title{
+        font-size: 20px !important;
+    }
+
+    .cartBtn{
+        font-size: 16px !important;
+    }
+
+    .logo{
+        width: 2.6rem !important;
+        height: 2.6rem !important;
+        object-fit: contain !important;
+    }
+}
