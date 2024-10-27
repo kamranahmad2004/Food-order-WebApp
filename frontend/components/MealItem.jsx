@@ -30,7 +30,7 @@ const MealItem = (mealData) => {
   return (
     <li className='meal-item'>
       <article>
-        <img src={`http://localhost:3000/${mealData.meal.image}`} alt={mealData.meal.name} />
+        <img src={`https://deadpan-accidental-farm.glitch.me/${mealData.meal.image}`} alt={mealData.meal.name} />
         <h3>{mealData.meal.name}</h3>
         <div>
           <p className='meal-item-price'>{formatter.format(mealData.meal.price)}</p>
