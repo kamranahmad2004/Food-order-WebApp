@@ -14,7 +14,7 @@ const cartSlice = createSlice({
       const existingItem = state.mealsItems.find((item) => item.id === newItem.id);
 
       if (existingItem) {
-        return; 
+        return;
       }
 
       state.mealsItems.push({
@@ -55,9 +55,9 @@ const cartSlice = createSlice({
     },
 
     submitOrder(state, action) {
-      state.order = action.payload; 
+      state.order = action.payload;
     },
-    
+
     setTotalPrice(state, action) {
       state.totalPrice = action.payload;
     },
@@ -81,7 +81,7 @@ const cartSlice = createSlice({
       state.mealsItems = [];
       state.totalPrice = 0;
       state.totalQuantity = 0;
-  }  
+    }
   },
 });
 

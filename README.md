@@ -2,6 +2,34 @@
 ## Overview
 This is a Food Order Web App built using React and Redux. The app allows users to browse food items, add them to the cart, remove from cart and place an order. The project includes a local dummy backend that stores food item data and user information for demonstration purposes.
 
+## 📸 Preview Project
+
+<div align="center">
+
+### Home Page
+<img src="./frontend/public/projectPics/home.png" alt="Home Page" width="700"/>
+
+### Cart & Checkout
+<table>
+  <tr>
+    <td align="center">
+      <img src="./frontend/public/projectPics/price-checkout.png" alt="Cart Summary" width="400"/>
+      <br/>
+      <b>Cart Summary</b>
+    </td>
+    <td align="center">
+      <img src="./frontend/public/projectPics/checkout-info.png" alt="Checkout Form" width="400"/>
+      <br/>
+      <b>Checkout Form</b>
+    </td>
+  </tr>
+</table>
+
+### Order Success
+<img src="./frontend/public/projectPics/success.png" alt="Order Success" width="700"/>
+
+</div>
+
 ## ✨ Features
 - 🛒 Browse a variety of food items
 - ➕ Add/remove items to/from the cart

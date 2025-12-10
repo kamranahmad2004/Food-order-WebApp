@@ -4,7 +4,7 @@ import { cartActions } from "./cartSlice";
 export const fetchData = () => {
   return async (dispatch) => {
     try {
-      const response = await fetch("https://deadpan-accidental-farm.glitch.me/meals");
+      const response = await fetch("http://localhost:3000/meals");
       if (!response.ok) {
         throw new Error("Fetching data failed");
       }
@@ -24,11 +24,10 @@ export const submitData = (userData, orderItems) => {
       const orderPayload = {
         customer: userData,
         items: orderItems,
-      
       };
   
       try {
-        const response = await fetch("https://deadpan-accidental-farm.glitch.me/orders", {
+        const response = await fetch("http://localhost:3000/orders", {
           method: "POST",
           body: JSON.stringify({ order: orderPayload }),
           headers: {
@@ -43,7 +42,6 @@ export const submitData = (userData, orderItems) => {
           throw new Error(resData.message || "Sending order data failed");
         }
   
-        
         dispatch(cartActions.submitOrder(resData)); 
         return resData; 
   
